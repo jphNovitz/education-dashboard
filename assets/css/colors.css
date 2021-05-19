@@ -1,0 +1,14 @@
+.bg-violet{
+    background-color: #5A45AA;
+    color: #ffffff;
+}
+.bg-white{
+    background-color: #ffffff;
+    color: #5A45AA;
+}
+
+
+.text-white{
+    background-color: inherit;
+    color: #ffffff;
+}
