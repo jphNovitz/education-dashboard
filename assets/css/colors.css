@@ -1,3 +1,5 @@
+
+
 .bg-violet{
     background-color: #5A45AA;
     color: #ffffff;
@@ -11,4 +13,12 @@
 .text-white{
     background-color: inherit;
     color: #ffffff;
+}
+.text-violet{
+    background-color: inherit;
+    color: #5A45AA;
+}
+.text-orange{
+    background-color: inherit;
+    color: #fb7445;
 }
