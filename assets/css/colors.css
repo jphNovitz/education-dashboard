@@ -1,4 +1,6 @@
-
+:root{
+    --violet : #5A45AA;
+}
 
 .bg-violet{
     background-color: #5A45AA;
