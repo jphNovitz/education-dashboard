@@ -13,6 +13,6 @@ article {
     position: relative;
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
+    flex: 1;
     font-family: 'Space Grotesk', sans-serif;
 }
