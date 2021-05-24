@@ -47,6 +47,13 @@ body {
     font-weight: bolder;
 }
 
+.bg-illustration{
+    background-image: url("../images/2341-ai(2).png") ;
+    background-repeat: no-repeat ;
+    background-position: 96% 60%;
+    background-size: 16%;
+}
+
 #register {
     max-width: 80%;
 }
@@ -179,11 +186,22 @@ body {
     #register {
         max-width: 60%;
     }
+
+
+    .bg-illustration {
+        background-size: 30%;
+    }
 }
 
 @media (min-width: 992px) {
+
     #register {
         max-width: 50%;
+    }
+    .bg-illustration {
+        background-image: url("../images/2341-ai(1).png");
+        background-position: 90% 60%;
+        background-size: 30%;
     }
 }
 
