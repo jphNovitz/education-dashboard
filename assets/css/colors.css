@@ -1,26 +1,56 @@
 :root{
+    --primary : #5A45AA;
+}
+
+:root{
+    --secondary : #ffffff;
+}
+
+:root{
+    --tertiary : rgba(189, 189, 190, 1);
+   /* --tertiary : #BDBDBE; */
+   /* --tertiary : #eceff6;*/
+}
+
+:root{
+    --tertiary-light : rgba(189, 189, 190, .6);
+}
+
+:root{
+    --quaternary: #fb7445;
+}
+/*:root{
+    -- : ;
+}*/
+
+:root{
     --violet : #5A45AA;
 }
 
-.bg-violet{
-    background-color: #5A45AA;
-    color: #ffffff;
+.bg-primary{
+    background-color: var(--primary);
+    color: var(--secondary);
 }
 .bg-white{
-    background-color: #ffffff;
-    color: #5A45AA;
+    background-color: var(--secondary);
+    color: var(--primary);
 }
 
 
-.text-white{
+.text-secondary{
     background-color: inherit;
-    color: #ffffff;
+    color: var(--secondary);
 }
-.text-violet{
+
+.text-primary{
     background-color: inherit;
-    color: #5A45AA;
+    color: var(--primary);
 }
-.text-orange{
+.text-tertiary{
     background-color: inherit;
-    color: #fb7445;
+    color: var(--tertiary);
+}
+.text-quaternary{
+    background-color: inherit;
+    color: var(--quaternary);
 }

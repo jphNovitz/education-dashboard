@@ -6,7 +6,7 @@
 
 a.btn.btn-basic:link,
 a.btn.btn-basic:visited{
-    color: #5A45AA;
+    color: var(--primary);
     text-decoration: none;
 
 }
