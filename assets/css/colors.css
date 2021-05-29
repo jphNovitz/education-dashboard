@@ -1,5 +1,11 @@
 :root{
+    --primary-lighter : rgba(202, 201, 218, 1);
+}
+:root{
     --primary : #5A45AA;
+}
+:root{
+    --primary-darker : #58558E;
 }
 
 :root{
@@ -10,6 +16,10 @@
     --tertiary : rgba(189, 189, 190, 1);
    /* --tertiary : #BDBDBE; */
    /* --tertiary : #eceff6;*/
+}
+
+:root{
+    --tertiary-darker : rgba(134, 134, 136, 1);
 }
 
 :root{

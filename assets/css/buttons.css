@@ -4,6 +4,8 @@
     font-size: .8rem;
 }
 
+a:link,
+a:visited,
 a.btn.btn-basic:link,
 a.btn.btn-basic:visited{
     color: var(--primary);
