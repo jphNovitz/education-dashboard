@@ -37,7 +37,7 @@
 #register form label {
     /*    background-color: white;
         color: rgba(189, 189, 190, 1);*/
-    background-color: var(--secondary);
+    background-color: var(--white);
     color: var(--primary-lighter);
     font-size: .9rem;
     margin-bottom: -20px;
