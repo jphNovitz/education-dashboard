@@ -1,0 +1,5 @@
+#content {
+    flex-basis: auto;
+    background-color: var(--tertiary);
+    padding: 1.5rem;
+}

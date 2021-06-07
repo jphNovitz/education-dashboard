@@ -1,0 +1,11 @@
+#leftbar {
+    min-width: 20rem;
+    align-self: flex-end;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:25px ;
+    background-color: var(--tertiary-light);
+    padding: 1.5rem;
+    min-height: 100vh;
+    height: min-content;
+    margin-left: -1.5rem;
+}
