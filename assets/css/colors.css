@@ -13,7 +13,8 @@
 }
 
 :root{
-    --tertiary: #E9E8EB;
+    --tertiary: #EDEFF6;
+   /*--tertiary: #e9e8eb;*/
     /*--tertiary : rgba(189, 189, 190, 1);
    /* --tertiary : #BDBDBE; */
    /* --tertiary : #eceff6;*/
@@ -25,12 +26,12 @@
 }
 
 :root{
-    --tertiary-light : #E9E8EB;
+    --tertiary-light : #f5f7fa;
     /*--tertiary-light : rgba(189, 189, 190, .6);*/
 }
 
 :root{
-    --quaternary: #EB6270;
+    --quaternary: #FB6D3A;
 }
 /*:root{
     -- : ;
@@ -49,6 +50,11 @@
     color: var(--primary);
 }
 
+
+.bg-quaternary{
+    background-color: var(--quaternary);
+    color: var(--white);
+}
 
 .text-white{
     background-color: inherit;

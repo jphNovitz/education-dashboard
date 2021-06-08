@@ -1,50 +1,121 @@
 #sidebar {
     flex: 0 0 18%;
-    min-width: 10rem;
+    min-width: 19.75rem;
     max-height: 96vh;
     padding: 1.1rem;
     font-family: 'Roboto', sans-serif;
 }
 
+
+#sidebar #logo{
+    flex: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
 #sidebar a:link,
 #sidebar a:visited,
 #sidebar a.btn.btn-basic:link,
-#sidebar a.btn.btn-basic:visited{
+#sidebar a.btn.btn-basic:visited {
     color: var(--white);
     text-decoration: none;
 
 }
 
-#sidebar a:hover{
-   font-weight: bold;
+#sidebar a:hover {
+    font-weight: bold;
 }
 
 
-#sidebar ul.menu-vertical{
+#sidebar ul.menu-vertical {
     display: flex;
     flex-basis: auto;
     flex-direction: column;
     padding: 0;
-    font-size: .9rem;
+    font-size: 1.2rem;
+   margin: 2rem 0 3rem 0;
 }
 
 
-#sidebar ul.menu-vertical li{
+#sidebar ul.menu-vertical li.fold:after,
+#sidebar ul.menu-vertical li .fold:after {
+    content: "";
+    background-image: url("../icons/angle-right-solid.svg");
+    display: block;
+    background-repeat: no-repeat;
+    width: .8rem;
+    height: .8rem;
+    float: right;
+    margin: 0 6px 0 0;
+}
+
+#sidebar ul.menu-vertical li.number:after,
+#sidebar ul.menu-vertical li .number:after {
+    content: "2";
+    background-color: var(--white);
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: center;
+    background-repeat: no-repeat;
+    width: .9rem;
+    height: .9rem;
+    float: right;
+    margin: 0 6px 0 0;
+    font-size: .55rem;
+    color: var(--primary);
+    font-weight: bold;
+    line-height: .9rem;
+}
+/*#sidebar ul.menu-vertical li:after {*/
+/*    content: '\f002';*/
+/*    font-family: FontAwesome*/
+/*}*/
+
+#sidebar ul.menu-vertical li {
     flex-basis: auto;
     list-style-type: none;
     padding: .5rem;
     border-radius: 5px;
     padding-left: 2rem;
+    margin-bottom: .5rem;
+    font-weight: 520;
 }
 
 #sidebar ul.menu-vertical li.active {
     background-color: var(--white);
 }
-#sidebar ul.menu-vertical li.active a{
+
+#sidebar ul.menu-vertical li.active a {
     color: var(--primary) !important;
 }
 
-#sidebar ul.menu-vertical li i{
+#sidebar ul.menu-vertical li i {
     margin-left: -1.8rem;
-    margin-right: .85rem;
+    margin-right: 1.8rem;
+}
+
+/* profile image */
+
+#sidebar .profile-image {
+    border-radius: 3%;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: white;
+    display: flex;
+    padding: 1rem;
+    flex: 0;
+    /*min-height: 300px*/
+}
+
+#sidebar .profile-image .btn{
+    margin: 1.8rem auto;
+    font-weight: bold;
+    padding: .75rem 2rem;
+    text-transform: capitalize;
+}
+
+#sidebar footer{
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 1rem;
 }
