@@ -38,6 +38,27 @@
 }*/
 
 :root{
+    --danger: #ED596A;
+}
+:root{
+    --danger-light: #FBE6E8;
+}
+
+:root{
+    --success: #5ECCC5;
+}
+:root{
+    --success-light: #D4F8F7;
+}
+
+:root{
+    --info: #51A3FF;
+}
+:root{
+    --info-light: #E6F2FF;
+}
+
+:root{
     --violet : #5A45AA;
 }
 
@@ -56,6 +77,19 @@
     color: var(--white);
 }
 
+.bg-success{
+    background-color: var(--success-light);
+    color: var(--success);
+}
+.bg-danger{
+    background-color: var(--danger-light);
+    color: var(--danger);
+}
+.bg-info{
+    background-color: var(--info-light);
+    color: var(--info);
+}
+
 .text-white{
     background-color: inherit;
     color: var(--white);
@@ -69,7 +103,22 @@
     background-color: inherit;
     color: var(--tertiary);
 }
+
 .text-quaternary{
     background-color: inherit;
     color: var(--quaternary);
+}
+
+.text-success{
+    background-color: inherit;
+    color: var(--success);
+}
+
+.text-danger{
+    background-color: inherit;
+    color: var(--danger);
+}
+.text-info{
+    background-color: inherit;
+    color: var(--info);
 }
