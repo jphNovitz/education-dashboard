@@ -9,6 +9,7 @@
 @import url(leftbar.css);
 @import url(content.css);
 @import url(card.css);
+@import url(list.css);
 
 body {
     background-color: var(--primary);

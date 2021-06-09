@@ -1,0 +1,40 @@
+.notification-list {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    padding: 0;
+}
+
+.notification-list .list-item {
+    list-style-type: none;
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.notification-list .list-item i {
+    background-color: var(--tertiary-light);
+    font-size: 2rem;
+    padding: .5rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+.notification-list .list-item h2,
+.notification-list .list-item h3{
+margin: 5px 0;
+}
+
+.notification-list .list-item h2 {
+    font-size: 0.976rem;
+    color: var(--primary-darker);
+    font-weight: 700;
+}
+
+.notification-list .list-item h3 {
+    font-size: .896rem;
+    color: var(--primary-lighter);
+    font-weight: 900;
+}
