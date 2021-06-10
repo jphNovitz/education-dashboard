@@ -11,15 +11,22 @@
     margin-bottom: 1rem;
 }
 
-.notification-list .list-item i {
-    background-color: var(--tertiary-light);
-    font-size: 2rem;
-    padding: .5rem;
+.notification-list .list-item i,
+.notification-list .list-item img {
     margin-right: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5%;
+    width: 3.75rem;
+    height: 3.75rem;
+    align-self: center;
+}
+
+.notification-list .list-item i{
+    background-color: var(--tertiary-light);
+    font-size: 2rem;
+    padding: 1rem;
 }
 
 .notification-list .list-item h2,

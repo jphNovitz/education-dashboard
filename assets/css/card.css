@@ -5,6 +5,8 @@
     max-height: min-content;
     flex: 0;
     margin: .6rem 0;
+    width: 25rem;
+    max-width: 25rem;
 }
 
 .card .card-header{
