@@ -35,6 +35,9 @@ body {
     font-weight: 900;
 }
 
+.p06{
+padding: .6rem;
+}
 .p1{
     padding: 1rem;
 }
@@ -42,6 +45,9 @@ body {
     padding: 1.5rem;
 }
 
+.inline{
+    display: inline;
+}
 .container-fluid{
     width: 100%;
     min-width: 100%;
@@ -184,6 +190,44 @@ body {
     bottom: 0;
 }
 
+
+.bell-notification{
+    position: relative;
+    width: 2rem;
+}
+.bell-notification:before{
+    content: "\f0f3";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--primary-darker);
+    font-weight: bolder;
+}
+
+.bell-notification p{
+    display: flex;
+    background-color: red;
+    position: absolute;
+    font-size: .85rem;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    width: 1rem;height: 1.1rem;
+    margin: 10px 0;
+    justify-content: flex-end;
+    align-items: center;
+    justify-self: flex-end;
+    right: 0;
+    top: 0;
+}
 @media (min-width: 576px) {
 
 }

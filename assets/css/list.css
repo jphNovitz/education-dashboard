@@ -45,3 +45,19 @@ margin: 5px 0;
     color: var(--primary-lighter);
     font-weight: 900;
 }
+
+.horizontal-group{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.horizontal-item{
+    flex-direction: row;
+    justify-content: center;
+    text-align: right;
+}
+
+.horizontal-item img{
+    margin: 0 6px;
+}

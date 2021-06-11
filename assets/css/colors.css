@@ -98,6 +98,10 @@
     color: var(--success);
 }
 
+.bg-notice-dark{
+    background-color: var(--notice);
+    color: var(--white);
+}
 .bg-notice{
     background-color: var(--notice-light);
     color: var(--notice);
