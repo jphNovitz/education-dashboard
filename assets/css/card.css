@@ -12,11 +12,13 @@
 .card .card-header{
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 1.5rem;
+    margin-top: 1.8rem;
 }
 .card .card-header .title{
     color: var(--primary-darker);
     font-weight: 900;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .card .card-header .btn-vertical{

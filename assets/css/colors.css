@@ -1,5 +1,6 @@
 :root{
-    --primary-lighter : rgba(202, 201, 218, 1);
+    /*--primary-lighter : rgba(202, 201, 218, 1);*/
+    --primary-lighter : #F0E8FF;
 }
 :root{
     --primary : #5A46AA;
@@ -33,9 +34,14 @@
 :root{
     --quaternary: #FB6D3A;
 }
-/*:root{
-    -- : ;
-}*/
+
+:root{
+    --notice: #FB6D3A;
+}
+
+:root{
+    --notice-light: #FBE6E8;
+}
 
 :root{
     --danger: #ED596A;
@@ -66,6 +72,11 @@
     background-color: var(--primary);
     color: var(--white);
 }
+
+.bg-primary-lighter{
+    background-color: var(--primary-lighter);
+    color: var(--primary);
+}
 .bg-white{
     background-color: var(--white);
     color: var(--primary);
@@ -81,6 +92,16 @@
     background-color: var(--success-light);
     color: var(--success);
 }
+
+.bg-success-dark{
+    background-color: var(--success);
+    color: var(--success);
+}
+
+.bg-notice{
+    background-color: var(--notice-light);
+    color: var(--notice);
+}
 .bg-danger{
     background-color: var(--danger-light);
     color: var(--danger);
@@ -91,34 +112,37 @@
 }
 
 .text-white{
-    background-color: inherit;
-    color: var(--white);
+    color: var(--white) !important;
 }
 
 .text-primary{
-    background-color: inherit;
-    color: var(--primary);
+    color: var(--primary) !important;
 }
 .text-tertiary{
-    background-color: inherit;
-    color: var(--tertiary);
+    color: var(--tertiary) !important;
+}
+.text-primary-darker{
+    color: var(--primary-darker) !important;
+}
+.text-tertiary-darker{
+    color: var(--tertiary-darker) !important;
 }
 
 .text-quaternary{
-    background-color: inherit;
-    color: var(--quaternary);
+    color: var(--quaternary) !important;
 }
 
 .text-success{
-    background-color: inherit;
-    color: var(--success);
+    color: var(--success) !important;
+}
+
+.text-notice{
+    color: var(--notice) !important;
 }
 
 .text-danger{
-    background-color: inherit;
-    color: var(--danger);
+    color: var(--danger) !important;
 }
 .text-info{
-    background-color: inherit;
-    color: var(--info);
+    color: var(--info) !important;
 }

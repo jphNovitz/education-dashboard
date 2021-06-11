@@ -11,6 +11,7 @@
 @import url(card.css);
 @import url(list.css);
 @import url(chart.css);
+@import url(breadcrumbs.css);
 
 body {
     background-color: var(--primary);
@@ -24,6 +25,21 @@ body {
 
 .size-1 {
     font-size: 1rem;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.bolder{
+    font-weight: 900;
+}
+
+.p1{
+    padding: 1rem;
+}
+.p1-5{
+    padding: 1.5rem;
 }
 
 .container-fluid{
