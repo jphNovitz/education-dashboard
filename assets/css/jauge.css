@@ -1,0 +1,32 @@
+.jauge{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 0 1rem;
+
+}
+
+#mydoughnut{
+    width: 75px
+    /*height: 50px;*/
+}
+.jauge .myChart,
+.jauge .mydoughnut,
+.jauge .mybars{
+    width: 25%;
+    align-content: flex-end;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.jauge .header{
+    font-weight: bolder;
+    font-size: 1.295rem;
+}
+
+.jauge .number{
+    font-weight: bolder;
+    font-size: 1.45rem;
+}

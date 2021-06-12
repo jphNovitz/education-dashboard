@@ -42,7 +42,7 @@ margin: 5px 0;
 
 .notification-list .list-item h3 {
     font-size: .896rem;
-    color: var(--primary-lighter);
+    color: var(--primary-light);
     font-weight: 900;
 }
 
@@ -50,6 +50,7 @@ margin: 5px 0;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
+    flex: 0;
 }
 
 .horizontal-item{

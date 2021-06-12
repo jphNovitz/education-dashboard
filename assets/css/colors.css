@@ -3,6 +3,10 @@
     --primary-lighter : #F0E8FF;
 }
 :root{
+    /*--primary-lighter : rgba(202, 201, 218, 1);*/
+    --primary-light : #B0AEC9;
+}
+:root{
     --primary : #5A46AA;
 }
 :root{
@@ -149,4 +153,14 @@
 }
 .text-info{
     color: var(--info) !important;
+}
+
+.border-left-primary{
+    border-left: solid 2px var(--primary);
+}
+.border-left-info{
+    border-left: solid 2px var(--info);
+}
+.border-left-danger{
+    border-left: solid 2px var(--danger);
 }
