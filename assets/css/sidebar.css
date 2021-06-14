@@ -1,8 +1,9 @@
 #sidebar {
-    flex: 0 0 18%;
-    min-width: 19.75rem;
+   /* flex: 0 0 18%;*/
+    flex: 0;
+    min-width: 16.75rem;
     max-height: 96vh;
-    padding: 1.1rem;
+    padding: .80rem;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -105,9 +106,16 @@
     display: flex;
     padding: 1rem;
     flex: 0;
+    width: 90%;
+    align-self: center;
+
     /*min-height: 300px*/
 }
 
+#sidebar .profile-image img{
+    max-width: 250px;
+    width: 90%;
+}
 #sidebar .profile-image .btn{
     margin: 1.8rem auto;
     font-weight: bold;
@@ -118,4 +126,5 @@
 #sidebar footer{
     font-family: 'Space Grotesk', sans-serif;
     padding: 1rem;
+    font-size: .96rem;
 }

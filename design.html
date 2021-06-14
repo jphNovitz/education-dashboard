@@ -80,8 +80,8 @@
             <article class="horizontal-item bg-white auto-height margin-horizontal-2 radius-3">
                 <div class="border-left-primary jauge">
                     <div>
-                    <span class="header">New Sale</span>
-                    <span class="number">5000</span>
+                        <span class="header">New Sale</span>
+                        <span class="number">5000</span>
                     </div>
                     <div class="myChart"></div>
 
@@ -93,7 +93,9 @@
                         <span class="header">New Visitor</span>
                         <span class="number">78%</span>
                     </div>
-                    <div class="mydoughnut"><canvas id="mydoughnut" ></canvas> </div>
+                    <div class="mydoughnut">
+                        <canvas id="mydoughnut"></canvas>
+                    </div>
 
                 </div>
             </article>
@@ -103,14 +105,260 @@
                         <span class="header">Total Revenue</span>
                         <span class="number">89,832 €</span>
                     </div>
-                    <div class="mybars"><canvas id="mybars" ></canvas> </div>
+                    <div class="mybars">
+                        <canvas id="mybars"></canvas>
+                    </div>
 
                 </div>
             </article>
 
         </section>
-        <div>content</div>
 
+        <section class="margin-v-1 flex-0">
+            <div class="chart-legend margin-v-1">
+                <h3 class="text-tertiary-darker">Earning history</h3>
+                <ul>
+                    <li>Course Visit <i class="fas fa-circle text-primary"></i></li>
+                    <li>Course Sale <i class="fas fa-circle text-danger"></i></li>
+                    <li>This Month <i class="fas fa-angle-down bg-white text-tertiary"></i></li>
+                </ul>
+            </div>
+            <article class="bg-white myBigChart p1-5 radius-5p">
+                <canvas id="myBigChart"></canvas>
+            </article>
+        </section>
+        <section class="horizontal-group">
+            <article class="horizontal-item margin-horizontal-1 start-40">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="title">
+                            Weekly Sales Stats
+                        </div>
+                        <a href="#" class="btn-vertical"></a>
+                    </div>
+                    <div class="card-body">
+                     <div class="myChart"> </div>
+                        <ul class="notification-list">
+                            <li class="list-item">
+                                <div class="no-image">
+                                    <h2>Adobe XD Part 01</h2>
+                                    <h3>UIUX Design</h3>
+                                </div>
+                                <div class="actions">
+                                    <span class="btn bg-success text-success">20€</span>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="no-image">
+                                    <h2>Adobe XD Part 02</h2>
+                                    <h3>UIUX Design</h3>
+                                </div>
+                                <div class="actions">
+                                    <span class="btn bg-info text-info">20€</span>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="no-image">
+                                    <h2>Adobe XD Part 03</h2>
+                                    <h3>UIUX Design</h3>
+                                </div>
+                                <div class="actions">
+                                    <span class="btn bg-danger text-danger">20€</span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="horizontal-item margin-horizontal-1 end-60">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="title">
+                            Student Queries
+                        </div>
+                        <a href="#" class="btn-vertical"></a>
+                    </div>
+                    <div class="card-body">
+                        <ul class="notification-list">
+                            <li class="list-item">
+                                <img src="http://placebeard.it/60/60" alt="demo"/>
+                                <div>
+                                    <h2>Machine Learning bootcamp</h2>
+                                    <h3>Your class will start</h3>
+                                </div>
+                                <div class="actions">
+                                    <a href="#" class="btn bg-success text-success">Approuval</a>
+                                    <a href="#" class="btn bg-danger text-danger">Decline</a>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <img src="http://placebeard.it/60/60" alt="demo"/>
+                                <div>
+                                    <h2>Machine Learning bootcamp</h2>
+                                    <h3>By Jame Board</h3>
+                                </div>
+                                <div class="actions">
+                                    <a href="#" class="btn bg-success text-success">Approuval</a>
+                                    <a href="#" class="btn bg-danger text-danger">Decline</a>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <img src="http://placebeard.it/60/60" alt="demo"/>
+                                <div>
+                                    <h2>Python & R Data Science </h2>
+                                    <h3>Data Science</h3>
+                                </div>
+                                <div class="actions">
+                                    <a href="#" class="btn bg-success text-success">Approuval</a>
+                                    <a href="#" class="btn bg-danger text-danger">Decline</a>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <img src="http://placebeard.it/60/60" alt="demo"/>
+                                <div>
+                                    <h2>SuperDataScience Support</h2>
+                                    <h3>Data Science</h3>
+                                </div>
+                                <div class="actions">
+                                    <a href="#" class="btn bg-success text-success">Approuval</a>
+                                    <a href="#" class="btn bg-danger text-danger">Decline</a>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <img src="http://placebeard.it/60/60" alt="demo"/>
+                                <div>
+                                    <h2>Analyst Bootcamp 2020</h2>
+                                    <h3>Data Science</h3>
+                                </div>
+                                <div class="actions">
+                                    <a href="#" class="btn bg-success text-success">Approuval</a>
+                                    <a href="#" class="btn bg-danger text-danger">Decline</a>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <img src="http://placebeard.it/60/60" alt="demo"/>
+                                <div>
+                                    <h2>Financial Analyst Course 2020</h2>
+                                    <h3>Data Science</h3>
+                                </div>
+                                <div class="actions">
+                                    <a href="#" class="btn bg-success text-success">Approuval</a>
+                                    <a href="#" class="btn bg-danger text-danger">Decline</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="card bg-white wfull">
+                <div class="card-body">
+                <div class="chart-legend margin-v-1">
+                    <h3 class="text-tertiary-darker">Course Status</h3>
+                    <ul>
+                        <li>Course Visit <i class="fas fa-circle text-primary"></i></li>
+                        <li>Course Sale <i class="fas fa-circle text-danger"></i></li>
+                        <li>This Month <i class="fas fa-angle-down bg-white text-tertiary"></i></li>
+                    </ul>
+                </div>
+                    <table>
+                        <tr class="header">
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Sale</th>
+                            <th>Ratting</th>
+                            <th>Earning</th>
+                            <th>Visitor</th>
+                        </tr>
+                        <tr>
+                            <td class="complexe">
+                                <img src="http://placebeard.it/g/48x48" alt="jiffy.codes">
+                                <div >
+                                    <h4>Adobe XD Part 01</h4>
+                                    <h5>UIUX Design</h5>
+                                </div>
+                            </td>
+                            <td>Design</td>
+                            <td>150</td>
+                            <td><i class="fas fa-star"></i> 4.5</td>
+                            <td>610.50€</td>
+                            <td>24,512</td>
+                        </tr>
+                        <tr>
+                            <td class="complexe">
+                                <img src="http://placebeard.it/g/48x48" alt="jiffy.codes">
+                                <div >
+                                    <h4>Adobe XD Part 01</h4>
+                                    <h5>UIUX Design</h5>
+                                </div>
+                            </td>
+                            <td>Development</td>
+                            <td>20</td>
+                            <td><i class="fas fa-star"></i> 5.0</td>
+                            <td>55.50€</td>
+                            <td>6,200</td>
+                        </tr>
+                        <tr>
+                            <td class="complexe">
+                                <img src="http://placebeard.it/g/48x48" alt="jiffy.codes">
+                                <div >
+                                    <h4>Adobe XD Part 01</h4>
+                                    <h5>UIUX Design</h5>
+                                </div>
+                            </td>
+                            <td>Photography</td>
+                            <td>56</td>
+                            <td><i class="fas fa-star"></i> 4.5</td>
+                            <td>610.50€</td>
+                            <td>24,512</td>
+                        </tr>
+                        <tr>
+                            <td class="complexe">
+                                <img src="http://placebeard.it/g/48x48" alt="jiffy.codes">
+                                <div >
+                                    <h4>Adobe XD Part 01</h4>
+                                    <h5>UIUX Design</h5>
+                                </div>
+                            </td>
+                            <td>Marketing</td>
+                            <td>150</td>
+                            <td><i class="fas fa-star"></i> 4.5</td>
+                            <td>610.50€</td>
+                            <td>24,512</td>
+                        </tr>
+                        <tr>
+                            <td class="complexe">
+                                <img src="http://placebeard.it/g/48x48" alt="jiffy.codes">
+                                <div >
+                                    <h4>Adobe XD Part 01</h4>
+                                    <h5>UIUX Design</h5>
+                                </div>
+                            </td>
+                            <td>Music</td>
+                            <td>30</td>
+                            <td><i class="fas fa-star"></i> 5.0</td>
+                            <td>110.50€</td>
+                            <td>6,512</td>
+                        </tr>
+                        <tr>
+                            <td class="complexe">
+                                <img src="http://placebeard.it/g/48x48" alt="jiffy.codes">
+                                <div >
+                                    <h4>Adobe XD Part 01</h4>
+                                    <h5>UIUX Design</h5>
+                                </div>
+                            </td>
+                            <td>Business</td>
+                            <td>90</td>
+                            <td><i class="fas fa-star"></i> 4.5</td>
+                            <td>240.50€</td>
+                            <td>512</td>
+                        </tr>
+                    </table>
+                </div>
+        </section>
     </div>
     <div id="leftbar" class="bg-tertiary">
         <section class="horizontal-group">

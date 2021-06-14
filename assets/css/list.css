@@ -10,28 +10,33 @@
     display: flex;
     margin-bottom: 1rem;
 }
+.notification-list .list-item > div {
+    flex-basis: max-content;
+}
 
-.notification-list .list-item i,
-.notification-list .list-item img {
-    margin-right: 1rem;
+.notification-list .list-item i{
+    margin-right: .9rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5%;
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 2.95rem;
+    height: 2.95rem;
     align-self: center;
 }
+.notification-list .list-item img{
+    display: none;
+}
 
-.notification-list .list-item i{
+.notification-list .list-item i {
     background-color: var(--tertiary-light);
     font-size: 2rem;
     padding: 1rem;
 }
 
 .notification-list .list-item h2,
-.notification-list .list-item h3{
-margin: 5px 0;
+.notification-list .list-item h3 {
+    margin: 5px 0;
 }
 
 .notification-list .list-item h2 {
@@ -46,19 +51,61 @@ margin: 5px 0;
     font-weight: 900;
 }
 
-.horizontal-group{
+.horizontal-group {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
     flex: 0;
 }
 
-.horizontal-item{
+.horizontal-item {
     flex-direction: row;
     justify-content: center;
-    text-align: right;
+    /*lign: right;*/
 }
 
-.horizontal-item img{
+.horizontal-item.end-60{
+    flex: 0;
+    flex-basis: 60%;
+    align-content: stretch;
+    justify-content: end;
+}
+
+.horizontal-item.start-40{
+    flex: 0;
+    flex-basis: 40%;
+    align-content: stretch;
+    justify-content: start;
+}
+
+.horizontal-item.start-40 .card,
+.horizontal-item.end-60 .card{
+    max-width: 100%;
+
+}
+
+.horizontal-item img {
     margin: 0 6px;
+}
+
+
+@media (min-width: 1600px) {
+    .notification-list .list-item i,
+    .notification-list .list-item img {
+        margin-right: 1rem;
+        width: 2.95rem;
+        height: 2.95rem;
+    }
+    .notification-list .list-item img{
+        display: flex;
+    }
+}
+
+@media (min-width: 1700px) {
+    .notification-list .list-item i,
+    .notification-list .list-item img {
+        margin-right: 1rem;
+        width: 3.75rem;
+        height: 3.75rem;
+    }
 }

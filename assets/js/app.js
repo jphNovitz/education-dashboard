@@ -6,10 +6,10 @@ for (let i = 0; i < myCharts.length; i++) {
     let item = myCharts[i];
 
     test = document.createElement('canvas')
-    test.setAttribute("id", "myChart"+i)
+    test.setAttribute("id", "myChart" + i)
     item.append(test)
 
-    var ctx = document.getElementById('myChart'+i).getContext('2d');
+    var ctx = document.getElementById('myChart' + i).getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -37,14 +37,14 @@ for (let i = 0; i < myCharts.length; i++) {
             }]
         },
         options: {
-            plugins:{
+            plugins: {
                 legend: {
                     display: false
                 }
             },
             scales: {
                 x: {
-                  display: false
+                    display: false
                 },
                 y: {
                     display: false
@@ -75,7 +75,7 @@ var mydoughnut = new Chart(ctx2, {
         }]
     },
     options: {
-        plugins:{
+        plugins: {
             legend: {
                 display: false
             }
@@ -96,10 +96,10 @@ var ctx3 = document.getElementById('mybars').getContext('2d');
 var mybars = new Chart(ctx3, {
     type: 'bar',
     data: {
-        labels: [' ',' ',' ',' ',' '],
+        labels: [' ', ' ', ' ', ' ', ' '],
         datasets: [{
             label: '',
-            data: [78, 10, 50, 30 ,90],
+            data: [78, 10, 50, 30, 90],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(255, 99, 132, 0.2)',
@@ -118,7 +118,7 @@ var mybars = new Chart(ctx3, {
         }]
     },
     options: {
-        plugins:{
+        plugins: {
             legend: {
                 display: false
             }
@@ -132,5 +132,51 @@ var mybars = new Chart(ctx3, {
             }
         },
         responsive: true
+    }
+});
+
+
+var gradient = ctx.createLinearGradient(0, 0, 0, 600);
+gradient.addColorStop(0, 'rgba(90,70,170,1)');
+gradient.addColorStop(1, 'rgba(90,70,170,0)');
+
+var ctx4 = document.getElementById('myBigChart').getContext('2d');
+var myBigChart = new Chart(ctx4, {
+    type: 'line',
+    data: {
+        labels: ['jan', 'Feb', 'Mar', 'Api', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        datasets: [{
+            label: '# of Votes',
+            fill: true,
+            backgroundColor: gradient,
+            data: [1, 5, 3, 15, 20, 30, 10, 60, 40, 80, 10, 100],
+            borderWidth: 1,
+            borderColor: '9C46AA'
+        },
+            {
+                label: '# of Votes',
+                fill: false,
+                backgroundColor: gradient,
+                data: [19, 12, 5, 3, 2, 12, 20, 40, 60, 55, 80, 90],
+                borderWidth: 1,
+                borderColor: 'red',
+
+            }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                display: false
+            }
+        },
+        scales: {
+            x: {
+                display: true
+            },
+            y: {
+                display: false
+            }
+        }
     }
 });
