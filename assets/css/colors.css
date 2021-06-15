@@ -51,6 +51,9 @@
     --danger: #ED596A;
 }
 :root{
+    --danger-darker: #eb6270;
+}
+:root{
     --danger-light: #FBE6E8;
 }
 
@@ -113,6 +116,10 @@
 .bg-danger{
     background-color: var(--danger-light);
     color: var(--danger);
+}
+.bg-danger-darker{
+    background-color: var(--danger);
+    color: var(--white);
 }
 .bg-info{
     background-color: var(--info-light);

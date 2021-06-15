@@ -2,6 +2,7 @@
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     padding: 0;
+    min-width: 100%;
 }
 
 .notification-list .list-item {
@@ -145,6 +146,10 @@
     background-color: var(--white);
     color: var(--tertiary-darker);
 }
+.menu-page .menu-page-item.active-alt {
+    background-color: var(--danger-darker);
+    color: var(--white);
+}
 
 .menu-page .menu-page-item,
 .menu-page .menu-page-item a:link,
@@ -168,6 +173,15 @@
 .menu-page .menu-page-item.active a:active {
     color: var(--tertiary-darker);
 }
+
+.menu-page .menu-page-item.active-alt,
+.menu-page .menu-page-item.active-alt a:link,
+.menu-page .menu-page-item.active-alt a:hover,
+.menu-page .menu-page-item.active-alt a:visited,
+.menu-page .menu-page-item.active-alt a:active {
+    color: var(--white);
+}
+
 
 .menu-top .menu-top-item.active:before {
     position: absolute;

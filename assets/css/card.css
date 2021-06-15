@@ -7,6 +7,7 @@
     margin: .6rem 0;
     /*width: 25rem;*/
     max-width: 25rem;
+    align-self: stretch;
 }
 
 .card .card-header {
@@ -47,15 +48,16 @@
     opacity: 50%;
 }
 
-.card card-body {
+.card .card-body {
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: stretch;
     font-weight: bold;
 }
 
 .card .actions .btn {
     height: 2rem;
     align-self: flex-end;
+    margin-left: 5px;
 }
 
 .card .no-image {
