@@ -86,8 +86,33 @@
 
 .horizontal-item img {
     margin: 0 6px;
+
 }
 
+
+.horizontal-labels{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.horizontal-labels .label{
+    background-color: var(--tertiary-light);
+    font-size: .85rem;
+    max-width: max-content;
+    padding: .6rem;
+    margin: 0 10px;
+    border-radius: 3px;
+    color: var(--tertiary-darker);
+    font-weight: bold;
+}
+
+.horizontal-labels .label:first-child{
+    margin-left: 0;
+
+}
+.horizontal-labels .label:last-child{
+    margin-right: 0;
+
+}
 
 @media (min-width: 1600px) {
     .notification-list .list-item i,

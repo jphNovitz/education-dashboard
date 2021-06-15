@@ -14,12 +14,15 @@
 @import url(breadcrumbs.css);
 @import url(header.css);
 @import url(jauge.css);
+@import url(schedule.css);
 
 body {
     background-color: var(--primary);
     display: flex;
     flex-direction: column;
 }
+
+
 
 .flex-0{
     flex: 0;
