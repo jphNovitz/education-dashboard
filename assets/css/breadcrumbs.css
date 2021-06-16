@@ -6,5 +6,11 @@ flex-direction: row;
 }
 
 .breadcrumb .h2{
-    font-size: 1.5rem;
+    font-size: 1.250rem;
+}
+
+@media (min-width: 1500px) {
+    .breadcrumb .h2{
+        font-size: 1.5rem;
+    }
 }

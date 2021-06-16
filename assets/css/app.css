@@ -22,9 +22,11 @@ body {
     flex-direction: column;
 }
 
+table{
+    width: 100%;
+}
 
-
-.flex-0{
+.flex-0 {
     flex: 0;
 }
 
@@ -35,64 +37,72 @@ body {
 .size-1 {
     font-size: 1rem;
 }
+
 .size-1-1 {
     font-size: 1.1rem;
 }
 
-.radius-3{
+.radius-3 {
     border-radius: 3%;
 }
-.radius-5p{
+
+.radius-5p {
     border-radius: 5px;
 }
 
-.bold{
+.bold {
     font-weight: 700;
 }
 
-.bolder{
+.bolder {
     font-weight: 900;
 }
 
-.p06{
-padding: .6rem;
+.p06 {
+    padding: .6rem;
 }
-.p1{
+
+.p1 {
     padding: 1rem;
 }
-.p1-5{
+
+.p1-5 {
     padding: 1.5rem;
 }
 
-.max-height{
+.max-height {
     height: max-content;
     padding: 1rem 0;
 }
 
-.auto-height{
+.auto-height {
     height: auto;
     padding: 1rem 0;
 }
 
-.margin-horizontal-1{
+.margin-horizontal-1 {
     margin: 0 .5rem;
 }
-.margin-horizontal-2{
+
+.margin-horizontal-2 {
     margin: 0 1rem;
 }
+
 .margin-horizontal-1:first-child,
-.margin-horizontal-2:first-child{
+.margin-horizontal-2:first-child {
     margin-left: 0;
 }
+
 .margin-horizontal-1:last-child,
-.margin-horizontal-2:last-child{
+.margin-horizontal-2:last-child {
     margin-right: 0;
 }
 
-.inline{
+.inline {
     display: inline;
 }
-.container-fluid{
+
+.container-fluid {
     width: 100%;
     min-width: 100%;
     flex-direction: row;
@@ -150,7 +160,7 @@ padding: .6rem;
     margin: 0 !important;
 }
 
-.margin-v-1{
+.margin-v-1 {
     margin: 1rem 0;
 }
 
@@ -235,11 +245,12 @@ padding: .6rem;
 }
 
 
-.bell-notification{
+.bell-notification {
     position: relative;
     width: 2rem;
 }
-.bell-notification:before{
+
+.bell-notification:before {
     content: "\f0f3";
     font-family: FontAwesome;
     position: absolute;
@@ -256,7 +267,7 @@ padding: .6rem;
     font-weight: bolder;
 }
 
-.bell-notification p{
+.bell-notification p {
     display: flex;
     background-color: red;
     position: absolute;
@@ -264,7 +275,8 @@ padding: .6rem;
     color: white;
     padding: 5px;
     border-radius: 50%;
-    width: 1rem;height: 1.1rem;
+    width: 1rem;
+    height: 1.1rem;
     margin: 10px 0;
     justify-content: flex-end;
     align-items: center;
@@ -272,6 +284,15 @@ padding: .6rem;
     right: 0;
     top: 0;
 }
+
+.mobile-icon > *{
+    font-size: .95rem;
+    display: none;
+}
+.mobile-icon i{
+    display: flex;
+}
+
 @media (min-width: 576px) {
 
 }
@@ -297,6 +318,7 @@ padding: .6rem;
 }
 
 @media (min-width: 992px) {
+
     .bg-illustration {
         background-image: url("../images/2341-ai(1).png");
         background-position: 99% 50%;
@@ -305,7 +327,9 @@ padding: .6rem;
 }
 
 @media (min-width: 1200px) {
-
+    .mobile-icon > *{
+        display: inline;
+    }
 }
 
 

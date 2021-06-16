@@ -165,6 +165,7 @@ var myBigChart = new Chart(ctx4, {
     },
     options: {
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
             legend: {
                 display: false

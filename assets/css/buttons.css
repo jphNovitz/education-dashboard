@@ -10,6 +10,11 @@
     align-items: center;
 }
 
+
+.btn-3{
+    width: 3rem !important;
+}
+
 a:link,
 a:visited,
 a.btn.btn-basic:link,
@@ -21,6 +26,6 @@ a.btn.btn-basic:visited{
 a.btn.btn-basic:hover{
     text-decoration: underline;
 }
-a.btn.btn-basicactive{
+a.btn.btn-basic.active{
     font-weight: bold;
 }

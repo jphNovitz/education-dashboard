@@ -2,8 +2,9 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    <meta name="viewport"-->
+<!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>index Dashboard - Jiffy Codes Liège</title>
     <link rel="stylesheet" href="assets/css/app.css">
@@ -78,9 +79,10 @@
         </footer>
 
     </nav>
-
-
     <div id="content" class="">
+        <div id="content-logo" >
+            <span class="title text-primary"> <span class="text-quaternary"> &amp; </span>jphNovitz</span>
+        </div>
         <header>
             <div>
                 <h1>Hello You <i class="open-hand"></i></h1>
@@ -139,7 +141,7 @@
                 </ul>
             </div>
             <article class="bg-white myBigChart p1-5 radius-5p">
-                <canvas id="myBigChart"></canvas>
+                <canvas id="myBigChart" style="position: relative; height: 30rem; width:100%"></canvas>
             </article>
         </section>
         <section class="horizontal-group">
@@ -151,7 +153,7 @@
                         </div>
                         <a href="#" class="btn-vertical"></a>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body wrappable">
                      <div class="myChart"> </div>
                         <ul class="notification-list">
                             <li class="list-item">
@@ -269,7 +271,7 @@
         </section>
 
         <section class="card bg-white wfull">
-                <div class="card-body">
+                <div class="card-body wrappable">
                 <div class="chart-legend margin-v-1">
                     <h3 class="text-tertiary-darker">Course Status</h3>
                     <ul>
@@ -378,8 +380,8 @@
     <div id="leftbar" class="bg-tertiary">
         <section class="horizontal-group">
             <div class="horizontal-item">
-                <a href="#" class="btn bg-notice-dark text-white inline bolder size-09 p06">
-                    <i class="fi-rr-upload"></i> New Upload</a>
+                <a href="#" class="btn bg-notice-dark text-white inline bolder size-09 p06 mobile-icon">
+                    <i class="fi-rr-upload"></i> <span>New Upload</span></a>
             </div>
             <div class="horizontal-item">
                 <span class="bell-notification">
@@ -496,7 +498,7 @@
                 </div>
                 <a href="#" class="btn-vertical"></a>
             </div>
-            <div class="card-body">
+            <div class="card-body wrappable">
                 <article class="breadcrumb bg-notice">
                     <div class="bold">
                         <span class="h2 text-primary-darker">572.00 €</span>
@@ -541,8 +543,6 @@
             Make request for WITHDRAW
         </a>
     </div>
-
-
 </div>
 </body>
 </html>

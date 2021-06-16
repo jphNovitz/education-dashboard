@@ -1,10 +1,11 @@
 #sidebar {
    /* flex: 0 0 18%;*/
     flex: 0;
-    min-width: 16.75rem;
+    min-width: 13rem;
     max-height: 96vh;
     padding: .80rem;
     font-family: 'Roboto', sans-serif;
+    display: none;
 }
 
 
@@ -34,7 +35,7 @@
     flex-basis: auto;
     flex-direction: column;
     padding: 0;
-    font-size: 1.2rem;
+    font-size: .95rem;
    margin: 2rem 0 3rem 0;
 }
 
@@ -127,4 +128,20 @@
     font-family: 'Space Grotesk', sans-serif;
     padding: 1rem;
     font-size: .96rem;
+}
+
+@media (min-width: 980px) {
+    #sidebar {
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px) {
+    #sidebar {
+        min-width: 16rem;
+    }
+
+    #sidebar ul.menu-vertical {
+        font-size: 1.15rem;
+    }
 }

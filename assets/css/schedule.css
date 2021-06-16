@@ -13,9 +13,13 @@
     height: max-content;
 
 }
-.columns-2:nth-child(odd){
-    margin-left: 0;
-}
-.columns-2:nth-child(even){
-    margin-right: 0;
+
+
+@media (min-width: 981px) {
+    .columns-2:nth-child(odd){
+        margin-left: 0;
+    }
+    .columns-2:nth-child(even){
+        margin-right: 0;
+    }
 }
