@@ -1,11 +1,12 @@
 header {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-content: space-between;
     /*padding: 1rem 1.5rem;*/
     max-height: 8rem;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;
+    align-items: center;*/
+    margin: 1.5rem 0;
 
 }
 

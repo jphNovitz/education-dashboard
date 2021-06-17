@@ -1,13 +1,14 @@
 #content {
     flex-basis: auto;
     background-color: var(--tertiary);
-    padding: 1.5rem 3rem 1.5rem 1.5rem;
+    padding: 1.5rem 1.8rem 1.5rem .75rem;
 }
 
 #content #content-logo.hide {
     margin-top: -5.9rem;
 
 }
+
 #content #content-logo {
     flex: 0;
     font-size: 1.8rem;
@@ -42,13 +43,21 @@
     list-style-type: none;
 }
 
-@media (min-width: 980px) {
+@media (min-width: 1200px) {
     #content #content-logo {
-        margin-top: -4.9rem;
+        margin-top: -6rem;
         transition: margin-top .9s ease-in-out;
     }
+
     #content #content-logo.show {
         margin-top: 0;
     }
 
+}
+
+
+@media (min-width: 14000px) {
+    #content {
+        padding: 1.5rem 3rem 1.5rem 1.5rem;
+    }
 }

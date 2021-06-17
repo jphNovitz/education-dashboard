@@ -9,6 +9,8 @@
     transition: margin-left .8s  ease-in-out;
 }
 
+
+
 .hide{
     margin-left: -13rem;
 }
@@ -137,16 +139,22 @@
     font-size: .96rem;
 }
 
-@media (min-width: 980px) {
+@media (min-width: 1200px) {
     #sidebar {
         margin-left: 0;
     }
+
+
+    #sidebar-menu i {
+        display: none;
+    }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
     #sidebar {
         min-width: 16rem;
     }
+
 
     #sidebar ul.menu-vertical {
         font-size: 1.15rem;

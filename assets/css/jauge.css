@@ -1,4 +1,4 @@
-.jauge{
+.jauge {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -7,26 +7,46 @@
 
 }
 
-#mydoughnut{
+.jauge > div {
+    text-align: center;
+}
+
+#mydoughnut {
     width: 75px
     /*height: 50px;*/
 }
+
 .jauge .myChart,
 .jauge .mydoughnut,
-.jauge .mybars{
-    width: 25%;
-    align-content: flex-end;
-    display: flex;
-    align-items: flex-end;
+.jauge .mybars {
+display: none;
 }
 
 
-.jauge .header{
+.jauge .header {
     font-weight: bolder;
-    font-size: 1.295rem;
+    font-size: 1rem;
 }
 
-.jauge .number{
+.jauge .number {
     font-weight: bolder;
-    font-size: 1.45rem;
+    font-size: 1.2rem;
+}
+
+
+@media (min-width: 1200px) {
+
+    .jauge > div {
+        text-align: left;
+    }
+
+    .jauge .myChart ,
+    .jauge .mydoughnut ,
+    .jauge .mybars  {
+        width: 20%;
+        align-content: flex-end;
+        display: flex;
+        align-items: flex-end;
+        padding: 0;
+    }
 }
