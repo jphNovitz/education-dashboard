@@ -5,9 +5,16 @@
     max-height: 96vh;
     padding: .80rem;
     font-family: 'Roboto', sans-serif;
-    display: none;
+    margin-left: -13rem;
+    transition: margin-left .8s  ease-in-out;
 }
 
+.hide{
+    margin-left: -13rem;
+}
+.show{
+    margin-left: 0 !important;
+}
 
 #sidebar #logo{
     flex: 0;
@@ -132,7 +139,7 @@
 
 @media (min-width: 980px) {
     #sidebar {
-        display: flex;
+        margin-left: 0;
     }
 }
 
