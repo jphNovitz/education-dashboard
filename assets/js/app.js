@@ -217,4 +217,38 @@ if (document.getElementById('myBigChart') !== null) {
 }
 
 
+/* ********************************* */
+/* ***** fake message submit ****** */
+/***********************************/
+
+// when click on the 'fake subit" it adds a spechh messenger bullet
+
+var speech = "<div class='message'>"
+              +"<img src='http://placebeard.it/g/48x48' alt='jiffy.codes'>"
+              + "<span class='speech'> azer</span>"
+              + "</div>"
+
+const submit = document.getElementById('fake-submit')
+if (submit){
+    submit.addEventListener('click', ()=>{
+        let text = document.getElementById('fake-message').value
+        if (text !==''){
+            var container = document.getElementById('messages-right')
+            let message = document.createElement("div")
+            message.classList.add("message")
+            let image = document.createElement('img')
+            image.src =  "http://placebeard.it/g/48x48"
+            let speech = document.createElement('span')
+            speech.classList.add("speech")
+            message.append(image)
+            let txt = document.createTextNode(text)
+            speech.append(txt)
+            message.append(speech)
+            document.getElementById('fake-message').value = ""
+
+            document.getElementById("messages-right").append(message)
+        }
+    })
+}
+
 
