@@ -79,10 +79,6 @@
     font-weight: bold;
     line-height: .9rem;
 }
-/*#sidebar ul.menu-vertical li:after {*/
-/*    content: '\f002';*/
-/*    font-family: FontAwesome*/
-/*}*/
 
 #sidebar ul.menu-vertical li {
     flex-basis: auto;
@@ -92,6 +88,23 @@
     padding-left: 2rem;
     margin-bottom: .5rem;
     font-weight: 520;
+}
+
+#sidebar.only-icons  {
+    min-width: min-content;
+}
+#sidebar.only-icons li a {
+   font-size: 0;
+}
+#sidebar.only-icons  a i {
+   font-size: initial;
+}
+
+#sidebar.only-icons  .number:after,
+#sidebar.only-icons  .fold:after,
+#sidebar.only-icons  .profile-image,
+#sidebar.only-icons   span:not(.copyright):not(.logo){
+   display: none !important;
 }
 
 #sidebar ul.menu-vertical li.active {

@@ -1,0 +1,87 @@
+#messages .notification-list .list-item {
+    border-bottom: solid 2px var(--tertiary);
+    padding: .6rem 0;
+}
+#messages .notification-list .list-item:first-child {
+    border-top: solid 2px var(--tertiary);
+}
+
+#messages .notification-list .list-item h2,
+#messages .notification-list .list-item h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+#messages .notification-list .list-item h2 {
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+#messages .notification-list .list-item h3 {
+    color: var(--tertiary-darker);
+    font-size: .975rem;
+}
+
+#messages .notification-list .list-item .info {
+    color: var(--tertiary-darker);
+    opacity: .6;
+    font-size: .975rem;
+    align-self: center;
+}
+
+#messages .notification-list .list-item img,
+#messages-right .message img {
+    display: flex;
+    border-radius: 50%;
+    margin-right: .5rem;
+    width: 3.625em;
+    height: 3.625em;
+}
+
+#messages .horizontal-item{
+    padding: 1rem ;
+}
+
+#messages-right {
+    flex-direction: column;
+}
+
+#messages-right .message {
+    flex-direction: row;
+}
+
+#messages-right .message {
+    height: 2rem;
+    max-height: 2rem;
+    margin: 1rem 0;
+}
+
+
+#messages-right .message .speech{
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+#messages-right .message:nth-child(odd) .speech {
+    background-color: var(--primary-lighter);
+    color: var(--primary-darker);
+    border-radius: 15px 15px 15px 0;
+}
+
+#messages-right .message:nth-child(even){
+    flex-direction: row-reverse;
+}
+#messages-right .message:nth-child(even) .speech{
+    background-color: var(--primary);
+    color: var(--primary-lighter);
+    border-radius: 15px 15px 0 15px ;
+}
+
+#messages-right .message .speech .info{
+    position: absolute;
+    bottom: -3.5rem;
+    color: var(--primary-light);
+}
+

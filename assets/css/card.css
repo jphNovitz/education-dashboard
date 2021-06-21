@@ -1,7 +1,7 @@
 .card {
     background-color: white;
     padding: .9rem;
-    border-radius: 3%;
+    border-radius: 5px;
     max-height: min-content;
     /* flex: 0;*/
     margin: .6rem 0;
@@ -10,9 +10,23 @@
     align-self: stretch;
 }
 
+
+#leftbar .card .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: var(--tertiary-darker);
+    opacity: .45;
+    text-align: right;
+    font-size: 0.688em;
+}
+
 #leftbar .card .card-header {
     margin-bottom: 3rem;
+    align-items: center;
 }
+
 .card .card-header {
     flex-direction: row;
     justify-content: space-between;
@@ -98,7 +112,7 @@
 }
 
 .card.horizontal .panel-right {
-    padding: .85rem ;
+    padding: .85rem;
 }
 
 .card.horizontal .panel-right .description {
@@ -176,13 +190,82 @@
 }
 
 .card table tr td img {
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 2.75rem;
+    height: 2.75rem;
     margin-right: 5px;
 }
 
 .card table tr td .fa-star {
     color: #F8AA00;
+}
+
+
+.card .card-profil-image {
+    flex-direction: row;
+    align-items: center;
+}
+
+.card .card-header .flow-column h2,
+.card .card-profil-image h2 {
+    font-size: 1.1rem;
+    color: var(--primary-darker)
+}
+
+.card .card-header .flow-column h3,
+.card .card-profil-image h3 {
+    font-size: .875rem;
+    color: var(--tertiary-darker)
+}
+
+.card .card-header .flow-column h2,
+.card .card-header .flow-column h3,
+.card .card-profil-image h2,
+.card .card-profil-image h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.card .card-header .flow-column h3.online {
+    padding-left: 15px;
+    position: relative;
+}
+
+.card .card-header .flow-column h3.online:before {
+    content: "";
+    background-color: var(--success);
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-radius: 50%;
+    display: inline-flex;
+    left: 0;
+    bottom: 2px;
+}
+
+.card .card-profil-image .image {
+    display: block;
+    position: relative;
+}
+
+.card .card-profil-image .image::after {
+    content: "";
+    width: 0.825em;
+    height: 0.825em;
+    position: absolute;
+    display: block;
+    z-index: 100;
+    bottom: 9px;
+    right: 13px;
+    background-color: var(--success);
+    border-radius: 50%;
+}
+
+.card .card-profil-image img {
+    width: 3.625em;
+    height: 3.625em;
+    border-radius: 50%;
+    margin-right: 5px;
+    position: relative;
 }
 
 @media (min-width: 980px) {
@@ -201,10 +284,11 @@
     }
 
 
-    .card .actions  {
+    .card .actions {
         flex-direction: row;
         justify-content: flex-end;
     }
+
     .card .actions .btn {
         height: 2rem;
         margin: 5px;
@@ -213,9 +297,10 @@
 }
 
 @media (min-width: 1500px) {
-    .card.horizontal .panel-right{
+    .card.horizontal .panel-right {
         padding-left: 0;
     }
+
     .card.horizontal img {
         height: 12rem !important;
         margin: 0 .8rem;

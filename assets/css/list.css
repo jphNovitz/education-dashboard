@@ -1,3 +1,10 @@
+.flow-column{
+    flex-direction: column !important;
+}
+.flow-row{
+    flex-direction: row !important;
+}
+
 .notification-list {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
@@ -65,6 +72,11 @@
     flex-direction: row;
     justify-content: center;
     /*lign: right;*/
+}
+
+
+.horizontal-item input{
+    max-height:  3rem;
 }
 
 .horizontal-item.end-60 {
@@ -171,9 +183,15 @@
 .menu-top .menu-top-item a:hover,
 .menu-top .menu-top-item a:visited,
 .menu-top .menu-top-item a:active {
-    color: var(--primary-darker);
+   /* color: var(--primary-darker);*/
+    color: var(--primary-light);
 }
 
+
+
+#messages .menu-top .menu-top-item a:active {
+    color: var(--primary-darker) !important;
+}
 
 .menu-page .menu-page-item.active,
 .menu-page .menu-page-item.active a:link,
@@ -243,6 +261,14 @@
     .menu-top .menu-top-item.active a:visited,
     .menu-top .menu-top-item.active a:active {
         font-size: 1.6rem;
+    }
+
+    #messages .menu-top .menu-top-item.active a:link,
+    #messages .menu-top .menu-top-item.active a:hover,
+    #messages .menu-top .menu-top-item.active a:visited,
+    #messages .menu-top .menu-top-item.active a:active {
+        color: var(--primary-darker);
+        font-size: 1.1rem;
     }
 
     .notification-list .list-item h2 {
