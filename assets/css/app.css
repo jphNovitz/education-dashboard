@@ -15,11 +15,17 @@
 @import url(header.css);
 @import url(jauge.css);
 @import url(schedule.css);
+@import url(messages.css);
 
 body {
     background-color: var(--primary);
     display: flex;
     flex-direction: column;
+}
+
+.top-visible{
+    padding-top: 2.5rem;
+    border-top: solid 2px var(--tertiary);
 }
 
 table{
