@@ -105,9 +105,9 @@
     align-self: center;
     position: relative;
     overflow: hidden;
-    width: 30vw;
-    height: 30vw;
-    max-height: calc(30vw * 1.082);
+    width: 55vw;
+    height: 55vw;
+    max-height: calc(55vw * 1.082);
     background-color: var(--tertiary-darker);
     border-color: solid 1px var(--tertiary-darker);
 
@@ -147,7 +147,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: -1.5rem;
-    width: 60%;
+    width: 20rem;
     align-self: center;
 
 }
@@ -178,4 +178,15 @@
     background-color: var(--white);
     color: var(--danger-darker);
     padding: .2rem 1rem;
+}
+
+@media (min-width: 1200px) {
+
+    /*video call*/
+    /* /video call*/
+    #video-call {
+        width: 45vw;
+        height: 45vw;
+        max-height: calc(45vw * 1.082);
+    }
 }
