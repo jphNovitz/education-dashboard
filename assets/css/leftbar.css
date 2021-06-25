@@ -13,6 +13,10 @@
     margin-left: -1.5rem;
 }
 
+#leftbar > section:first-child{
+    height: 3rem;
+}
+
 #leftbar .horizontal-item img{
     display: none;
 }

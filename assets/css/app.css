@@ -16,6 +16,7 @@
 @import url(jauge.css);
 @import url(schedule.css);
 @import url(messages.css);
+@import url(upload.css);
 
 body {
     background-color: var(--primary);
@@ -26,6 +27,20 @@ body {
 .top-visible{
     padding-top: 2.5rem;
     border-top: solid 2px var(--tertiary);
+}
+
+
+.center-4{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.border-dashed-1{
+border: dashed 1px var(--tertiary);
+}
+.border-dashed-2{
+border: dashed 2px var(--tertiary);
 }
 
 table{
@@ -45,11 +60,11 @@ table{
 }
 
 .size-1-1 {
-    font-size: 1.1rem;
+    font-size: 1.1rem !important;
 }
 
 .radius-3 {
-    border-radius: 3%;
+    border-radius: 3% !important;
 }
 
 .radius-5p {

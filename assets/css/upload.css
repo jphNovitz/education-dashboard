@@ -1,0 +1,46 @@
+#upload-courses .custom-file-input::before {
+    content: "\f093";
+    font-family: FontAwesome;
+    position: absolute;
+    top: calc(50% - .5rem);
+    left: calc(50% - .5rem);
+    display: block;
+    color: var(--tertiary-darker);
+}
+
+#upload-courses .custom-file-input {
+    background-color: var(--tertiary-light);
+    border-radius: 50%;
+    position: relative;
+}
+
+
+#upload-courses input[type=file] {
+    position: relative;
+    opacity: 0;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--tertiary);
+}
+
+#upload-courses .file-caption {
+    font-weight: bold;
+    color: var(--primary-darker);
+    padding: 1rem 0;
+    margin-top: 10px;
+}
+
+#upload-courses input[type=submit]{
+    width: max-content;
+    font-size: 1.1rem;
+    padding: .5rem !important;
+    border-radius: 8px;
+}
+
+#upload-courses .form-row-horizontal{
+    max-width: initial !important;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
