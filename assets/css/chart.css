@@ -1,7 +1,13 @@
+table .myChart,
 .notification-list .list-item .myChart{
     display: flex;
     justify-content: center;
     border-radius: 5%;
     align-self: center;
     transform: scale(.65);
+}
+
+table .myChart{
+    width: 5rem;
+    max-width: 5rem;
 }

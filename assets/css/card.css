@@ -143,6 +143,9 @@
 .card table {
     border-collapse: collapse;
 }
+.card table .center{
+    text-align: center;
+}
 
 .card table tr {
     border-bottom: 5px solid transparent;

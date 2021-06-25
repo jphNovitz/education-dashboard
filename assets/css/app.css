@@ -17,6 +17,7 @@
 @import url(schedule.css);
 @import url(messages.css);
 @import url(upload.css);
+@import url(pagination.css);
 
 body {
     background-color: var(--primary);
