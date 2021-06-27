@@ -1,0 +1,99 @@
+.pagination{
+    flex-direction: row;
+    align-items: baseline;
+    border-top: solid 1px var(--tertiary);
+    border-bottom: solid 1px var(--tertiary);
+    height: max-content;
+    flex: 0;
+    margin-top: 5rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+}
+.pagination *{
+    border-radius: 5px;
+}
+.pagination ul.nav {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.pagination ul.nav li:first-child,
+.pagination ul.nav li:last-child {
+    background-color: var(--info-light);
+    color: var(--info);
+}
+
+.pagination ul.nav li:first-child a:link,
+.pagination ul.nav li:first-child a:hover,
+.pagination ul.nav li:first-child a:visited,
+.pagination ul.nav li:first-child a:active,
+.pagination ul.nav li:last-child a:link,
+.pagination ul.nav li:last-child a:hover,
+.pagination ul.nav li:last-child a:visited,
+.pagination ul.nav li:last-child a:active {
+    color: var(--info);
+}
+
+.pagination ul.nav li:first-child {
+    margin-left: 0;
+}
+
+.pagination ul.nav li a:link
+.pagination ul.nav li a:hover,
+.pagination ul.nav li a:visited,
+.pagination ul.nav li a:active {
+    color: var(--tertiary-darker) !important;
+}
+
+.pagination ul.nav li {
+    margin: 0 1rem;
+    padding: .5rem;
+    list-style-type: none;
+}
+
+.pagination ul.nav li:last-child {
+    margin-right: 0;
+}
+
+.pagination ul li.active {
+    background-color: var(--info);
+    color: var(--white);
+}
+
+
+.pagination ul li.active a:link,
+.pagination ul li.active a:hover,
+.pagination ul li.active a:visited,
+.pagination ul li.active a:active {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.pagination select{
+    width: 4rem;
+    text-align: right;
+    background-color: var(--info-light);
+    color: var(--info);
+    font-weight: bold;
+    align-self: self-end;
+    margin-right: 1rem;
+    border: solid 1px var(--info-light);
+    padding: .5rem;
+}
+
+
+.pagination select option a:hover,
+.pagination select li a:hover{
+    display: none;
+    background-color: var(--info);
+    color: var(--white);
+}
+
+.pagination .comment{
+    font-weight: bold;
+    font-size: .975rem;
+    color: var(--tertiary-darker);
+    opacity: .45;
+}
