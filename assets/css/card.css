@@ -159,6 +159,7 @@
 
 .card table th {
     text-align: left;
+    padding: .8rem 0 .8rem 5px;
 }
 
 .card table tr td h4,
