@@ -29,6 +29,10 @@ body {
     padding-top: 2.5rem;
     border-top: solid 2px var(--tertiary);
 }
+.bottom-visible{
+    padding-bottom: 1.5rem;
+    border-bottom: solid 2px var(--tertiary);
+}
 
 
 .center-4{

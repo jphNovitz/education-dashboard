@@ -30,9 +30,11 @@
 .card .card-header {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 1.5rem;
     margin-top: 1.8rem;
     max-height: 1rem;
+    /*padding-bottom: 1rem;*/
 }
 
 .card .card-header .title {

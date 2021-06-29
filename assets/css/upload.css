@@ -15,7 +15,8 @@
 }
 
 
-#upload-courses input[type=file] {
+#upload-courses input[type=file] ,
+form input[type=file] {
     position: relative;
     opacity: 0;
     border-radius: 50%;
@@ -43,4 +44,23 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+}
+
+#my_account .change-image{
+position: relative;
+}
+
+#my_account .change-image::after{
+    content: "Change image";
+    font-size: .950rem;
+
+    position: absolute;
+    top: 1rem;
+    /*left: calc(50% - .5rem);*/
+    left: -1.1rem;
+    display: block;
+    color: var(--primary-light);
+    border: solid 1px var(--primary-light);
+    width: 100%;
+    padding: 1rem;
 }
