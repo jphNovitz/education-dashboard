@@ -1,5 +1,5 @@
 #content {
-    flex-basis: auto;
+    flex-basis: 100%;
     background-color: var(--tertiary);
     padding: 1.5rem 1.8rem 1.5rem .75rem;
 }
